@@ -12,7 +12,7 @@ dbt-core
 faiss-cpu
 langchain
 langchain-community
-langchain-openai
 plotly
 sentence-transformers
+openpyxl
 numpy
