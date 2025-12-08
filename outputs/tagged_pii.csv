@@ -1,0 +1,101 @@
+message_id,masked_text,pii_entities,risk_flag,original_text
+C001,"Hi team, my NRIC is <NRIC> and account number <ACCOUNT> with DBS. Can you urgently transfer SGD <SALARY> to my cousin in Batam today? Thanks!","['NRIC', 'Account Number', 'Salary']",Critical,"Hi team, my NRIC is S9812345B and account number 123-456789-001 with DBS. Can you urgently transfer SGD 48,000 to my cousin in Batam today? Thanks!"
+C002,"Good morning, phone <PHONE>, passport <PASSPORT>, salary credited <SALARY> this month, please increase my credit limit","['Phone', 'Passport', 'Salary']",Critical,"Good morning, phone 96554321, passport T0123456A, salary credited 8500 this month, please increase my credit limit"
+C003,"Customer said: my IC is <NRIC>, IBAN <ACCOUNT>, need cash pickup in Johor tomorrow","['NRIC', 'Account Number']",Critical,"Customer said: my IC is F5678901Z, IBAN SG99DBSS1234567890, need cash pickup in Johor tomorrow"
+C004,"Please send money to my wife account <ACCOUNT> OCBC, her NRIC <NRIC>","['Account Number', 'NRIC']",Critical,"Please send money to my wife account 987-654321-099 OCBC, her NRIC G2345678B"
+C005,"Lost my card ending <ACCOUNT>, full number <ACCOUNT> expiry 12/28",['Account Number'],High,"Lost my card ending 4321, full number 5123-4567-8901-2345 expiry 12/28"
+C006,"Hi compliance, here is my updated address: <ADDRESS>",['Address'],High,"Hi compliance, here is my updated address: Blk 123 Ang Mo Kio Ave 6 #15-678 S(567890)"
+C007,"Customer shouting: just do the transfer lah, my IC <NRIC>, don’t ask so many questions",['NRIC'],High,"Customer shouting: just do the transfer lah, my IC S1122334A, don’t ask so many questions"
+C008,Can paynow to <PHONE>? It’s for my brother overseas,['Phone'],Medium,Can paynow to 91234567? It’s for my brother overseas
+C009,Attached payslip Jan–Mar 2025 – salary <SALARY> SGD,['Salary'],Medium,"Attached payslip Jan–Mar 2025 – salary 12,500 SGD"
+C010,"My old account <ACCOUNT> UOB please close, new one <ACCOUNT>",['Account Number'],High,"My old account 111-222333-444 UOB please close, new one 555-666777-888"
+C011,"Dear support, my email is <EMAIL>, phone <PHONE>, need to verify identity for loan",['Phone'],Medium,"Dear support, my email is john.doe@email.com, phone +65 9876 5432, need to verify identity for loan"
+C012,"Customer: send 20k to my friend in KL, his account <ACCOUNT> Maybank, my NRIC <NRIC>","['NRIC', 'Account Number']",Critical,"Customer: send 20k to my friend in KL, his account 789-012345-678 Maybank, my NRIC S3456789C"
+C013,"Salary deposit issue – my payroll no. <EMP_ID>, expected <SALARY> SGD","['Employee ID', 'Salary']",Medium,"Salary deposit issue – my payroll no. SG123456789, expected 7500 SGD"
+C014,Update KYC: new address <ADDRESS>,['Address'],High,Update KYC: new address 456 Orchard Road #12-345 S(238871)
+C015,"Urgent wire to Indonesia, my passport <PASSPORT>, account <ACCOUNT>","['Passport Number', 'Account Number']",High,"Urgent wire to Indonesia, my passport A1234567B, account 222-333444-555"
+C016,Card details for dispute: <ACCOUNT> CVV <ACCOUNT>,['Account Number'],High,Card details for dispute: 4111-1111-1111-1111 CVV 123
+C017,"Hi, my SIN <NRIC>, please block all cards",['NRIC'],High,"Hi, my SIN S8765432D, please block all cards"
+C018,"Customer: transfer to crypto wallet, my phone <PHONE>",['Phone Number'],Medium,"Customer: transfer to crypto wallet, my phone 9123 4567"
+C019,"New beneficiary: wife NRIC <NRIC>, account <ACCOUNT>","['NRIC', 'Account Number']",Critical,"New beneficiary: wife NRIC F1234567A, account 999-888777-666"
+C020,Payslip attached – gross income <SALARY> annual,['Salary'],Medium,"Payslip attached – gross income 95,000 SGD annual"
+C021,"My IC <NRIC>, urgent cash withdrawal <SALARY> SGD","['NRIC', 'Salary']",Critical,"My IC G7890123C, urgent cash withdrawal 9,500 SGD"
+C022,Address change: <ADDRESS>,['Address'],High,Address change: 789 Marine Parade #08-901 S(449269)
+C023,"Verify email <EMAIL>, phone <PHONE>",['Phone'],Medium,"Verify email john@fakebank.com, phone +60123456789"
+C024,"Customer demands: send to offshore, passport <PASSPORT>",['Passport'],High,"Customer demands: send to offshore, passport T9876543Z"
+C025,"Salary not credited, my emp ID <EMP_ID>",['Employee ID'],Medium,"Salary not credited, my emp ID SG987654321"
+C026,"Update phone to <PHONE>, NRIC <NRIC>","['Phone', 'NRIC']",Critical,"Update phone to 9765 4321, NRIC S4567890A"
+C027,"Transfer 35k to cousin, his IBAN <ACCOUNT>",['Account Number'],High,"Transfer 35k to cousin, his IBAN MY12UOBM123456789012"
+C028,"Lost phone with banking app, old number <PHONE>",['Phone'],Medium,"Lost phone with banking app, old number 8123 4567"
+C029,KYC docs: passport <PASSPORT>,['Passport Number'],High,KYC docs: passport A4567890B
+C030,"Customer: my account <ACCOUNT>, salary <SALARY> SGD","['Account Number', 'Salary']",Critical,"Customer: my account 333-444555-666, salary 6,200 SGD"
+C031,PayNow to <PHONE> for family emergency,['Phone Number'],Medium,PayNow to 9234 5678 for family emergency
+C032,Address: <ADDRESS>,['Address'],High,Address: 123 Jalan Besar #05-678 S(209001)
+C033,"IC <NRIC>, urgent loan disbursement",['NRIC'],High,"IC S2345678B, urgent loan disbursement"
+C034,"Card expiry 09/27, number <ACCOUNT>",['Account Number'],High,"Card expiry 09/27, number 6011-2345-6789-0123"
+C035,Email update: <EMAIL>,['Email'],Medium,Email update: jane.smith@fake.com
+C036,"Customer: wire to Batam, phone <PHONE>",['Phone Number'],Medium,"Customer: wire to Batam, phone +62 21 1234567"
+C037,Salary query – expected <SALARY> SGD,['Salary'],Medium,"Salary query – expected 4,500 SGD"
+C038,"NRIC <NRIC>, new address <ADDRESS>","['NRIC', 'Address']",Critical,"NRIC G0123456D, new address Blk 456 Tampines St 41 #10-123"
+C039,"Passport <PASSPORT>, transfer 15k overseas",['Passport Number'],High,"Passport T5678901A, transfer 15k overseas"
+C040,Account closure: old no. <ACCOUNT>,['Account Number'],High,Account closure: old no. 777-888999-000
+C041,Payslip Feb 2025 – net <SALARY> SGD,['Salary'],Medium,"Payslip Feb 2025 – net 7,800 SGD"
+C042,"IC <NRIC>, cash deposit issue",['NRIC'],High,"IC F8901234Z, cash deposit issue"
+C043,Phone verification <PHONE>,['Phone Number'],Medium,Phone verification +65 9345 6789
+C044,Beneficiary add: husband account <ACCOUNT>,['Account Number'],High,Beneficiary add: husband account 456-789012-345
+C045,"Customer: my SIN <NRIC>, block transfers",['NRIC'],High,"Customer: my SIN S6789012C, block transfers"
+C046,Address: <ADDRESS>,['Address'],High,Address: 890 Woodlands Drive 50 #16-789 S(730890)
+C047,Salary advance request – income <SALARY> SGD,['Salary'],Medium,"Salary advance request – income 11,000 SGD"
+C048,"NRIC <NRIC>, urgent wire to KL",['NRIC'],High,"NRIC S9012345A, urgent wire to KL"
+C049,Card details: <ACCOUNT> Amex,['Account Number'],High,Card details: 3700-0000-0000-002 Amex
+C050,Update email to support@fakebank.sg,[],Low,Update email to support@fakebank.sg
+C051,"Customer: passport <PASSPORT>, transfer to Indonesia",['Passport Number'],High,"Customer: passport A7890123B, transfer to Indonesia"
+C052,PayNow QR for <SALARY> SGD,['Salary'],Medium,"PayNow QR for 8,200 SGD"
+C053,KYC: IC <NRIC>,['NRIC'],High,KYC: IC G3456789D
+C054,"Phone <PHONE>, account <ACCOUNT>","['Phone', 'Account Number']",High,"Phone +6012 3456789, account 123-789456-012"
+C055,Salary not in – emp no. <EMP_ID>,['Employee ID'],Medium,Salary not in – emp no. SG456789012
+C056,New address <ADDRESS>,['Address'],High,New address 567 Serangoon Road #03-456 S(218161)
+C057,"IC <NRIC>, dispute charge",['NRIC'],High,"IC S0123456B, dispute charge"
+C058,Beneficiary NRIC <NRIC>,['NRIC'],High,Beneficiary NRIC F6789012A
+C059,Payslip – gross <SALARY> SGD,['Salary'],Medium,"Payslip – gross 105,000 SGD"
+C060,"Customer: urgent cash to Johor, IBAN <ACCOUNT>",['Account Number'],High,"Customer: urgent cash to Johor, IBAN SG88OCBC1234567890"
+C061,Lost card no. <ACCOUNT>,['Account Number'],High,Lost card no. 4917-5300-0000-0000
+C062,Phone update <PHONE>,['Phone Number'],Medium,Phone update 9456 7890
+C063,"NRIC <NRIC>, loan query",['NRIC'],High,"NRIC S7890123C, loan query"
+C064,Address change <ADDRESS>,['Address'],High,Address change Blk 789 Yishun Ave 5 #11-234
+C065,Email <EMAIL>,['Email'],Medium,Email jdoe@fake.com.sg
+C066,"Passport <PASSPORT>, transfer 25k",['Passport'],High,"Passport T2345678Z, transfer 25k"
+C067,Salary <SALARY> expected,['Salary'],Medium,"Salary 9,200 SGD expected"
+C068,"IC <NRIC>, KYC update",['NRIC'],High,"IC G9012345D, KYC update"
+C069,"Customer: account <ACCOUNT>, phone <PHONE>","['Account Number', 'Phone']",High,"Customer: account 999-123456-789, phone 8765 4321"
+C070,PayNow to <PHONE>,['Phone'],Medium,PayNow to 9012 3456
+C071,Payslip Dec – net <SALARY> SGD,['Salary'],Medium,"Payslip Dec – net 6,500 SGD"
+C072,"NRIC <NRIC>, block all",['NRIC'],High,"NRIC S3456789A, block all"
+C073,"Card expiry 06/29, number <ACCOUNT>",['Account Number'],High,"Card expiry 06/29, number 5555-6666-7777-8888"
+C074,Address <ADDRESS>,['Address'],High,Address 321 Clementi Ave 2 #07-890 S(120321)
+C075,"IC <NRIC>, urgent wire",['NRIC'],High,"IC F1234567Z, urgent wire"
+C076,Salary issue – payroll <EMP_ID>,['Employee ID'],Medium,Salary issue – payroll SG789012345
+C077,Phone <PHONE>,['Phone'],Medium,Phone +65 8123 4567
+C078,"Customer: passport <PASSPORT>, cash withdrawal",['Passport Number'],High,"Customer: passport A5678901B, cash withdrawal"
+C079,Beneficiary account <ACCOUNT>,['Account Number'],High,Beneficiary account 234-567890-123
+C080,KYC NRIC <NRIC>,['NRIC'],High,KYC NRIC G4567890C
+C081,"Transfer to Batam, my IBAN <ACCOUNT>",['Account Number'],High,"Transfer to Batam, my IBAN SG77UOBM0987654321"
+C082,Lost phone <PHONE>,['Phone'],Medium,Lost phone 9234 5678
+C083,Salary <SALARY> query,['Salary'],Medium,"Salary 5,800 SGD query"
+C084,"IC <NRIC>, dispute",['NRIC'],High,"IC S6789012D, dispute"
+C085,Address <ADDRESS>,['Address'],High,Address 456 Bedok North Ave 3 #09-012 S(460456)
+C086,Email update <EMAIL>,['Email'],Medium,Email update fake.user@email.com
+C087,"NRIC <NRIC>, loan increase",['NRIC'],High,"NRIC S9012345B, loan increase"
+C088,Card no. <ACCOUNT>,['Account Number'],High,Card no. 3782-8224-6310-005
+C089,Payslip – annual <SALARY> SGD,['Salary'],Medium,"Payslip – annual 88,000 SGD"
+C090,"Customer: phone <PHONE>, transfer overseas",['Phone'],Medium,"Customer: phone +60123456789, transfer overseas"
+C091,PayNow <PAYNOW_ID>,['PayNow ID'],Medium,PayNow 9345 6789
+C092,"IC <NRIC>, KYC",['NRIC'],High,"IC G0123456A, KYC"
+C093,"Account <ACCOUNT>, salary <SALARY> SGD","['Account Number', 'Salary']",Critical,"Account 666-777888-999, salary 10,500 SGD"
+C094,New address <ADDRESS>,['Address'],High,New address Blk 890 Jurong West St 52 #14-345
+C095,"Passport <PASSPORT>, urgent",['Passport'],High,"Passport T8901234C, urgent"
+C096,Customer: IBAN <ACCOUNT>,['Account Number'],High,Customer: IBAN MY99MBB112233445566
+C097,Salary not received – emp <EMP_ID>,['Employee ID'],Medium,Salary not received – emp SG234567890
+C098,Phone <PHONE> update,['Phone'],Medium,Phone 9765 4321 update
+C099,"NRIC <NRIC>, cash issue",['NRIC'],High,"NRIC F5678901D, cash issue"
+C100,"Beneficiary NRIC <NRIC>, account <ACCOUNT>","['NRIC', 'Account Number']",Critical,"Beneficiary NRIC S1234567Z, account 111-000999-888"

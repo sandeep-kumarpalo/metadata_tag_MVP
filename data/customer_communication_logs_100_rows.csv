@@ -1,0 +1,100 @@
+﻿message_id,channel,date,text
+C001,email,15-10-2025,"Hi team, my NRIC is S9812345B and account number 123-456789-001 with DBS. Can you urgently transfer SGD 48,000 to my cousin in Batam today? Thanks!"
+C002,app_chat,16-10-2025,"Good morning, phone 96554321, passport T0123456A, salary credited 8500 this month, please increase my credit limit"
+C003,call_transcript,17-10-2025,"Customer said: my IC is F5678901Z, IBAN SG99DBSS1234567890, need cash pickup in Johor tomorrow"
+C004,email,18-10-2025,"Please send money to my wife account 987-654321-099 OCBC, her NRIC G2345678B"
+C005,app_chat,20-10-2025,"Lost my card ending 4321, full number 5123-4567-8901-2345 expiry 12/28"
+C006,email,21-10-2025,"Hi compliance, here is my updated address: Blk 123 Ang Mo Kio Ave 6 #15-678 S(567890)"
+C007,call_transcript,22-10-2025,"Customer shouting: just do the transfer lah, my IC S1122334A, don’t ask so many questions"
+C008,app_chat,23-10-2025,Can paynow to 91234567? It’s for my brother overseas
+C009,email,24-10-2025,"Attached payslip Jan–Mar 2025 – salary 12,500 SGD"
+C010,app_chat,25-10-2025,"My old account 111-222333-444 UOB please close, new one 555-666777-888"
+C011,email,26-10-2025,"Dear support, my email is john.doe@email.com, phone +65 9876 5432, need to verify identity for loan"
+C012,call_transcript,27-10-2025,"Customer: send 20k to my friend in KL, his account 789-012345-678 Maybank, my NRIC S3456789C"
+C013,app_chat,28-10-2025,"Salary deposit issue – my payroll no. SG123456789, expected 7500 SGD"
+C014,email,29-10-2025,Update KYC: new address 456 Orchard Road #12-345 S(238871)
+C015,call_transcript,30-10-2025,"Urgent wire to Indonesia, my passport A1234567B, account 222-333444-555"
+C016,app_chat,01-11-2025,Card details for dispute: 4111-1111-1111-1111 CVV 123
+C017,call_transcript,03-11-2025,"Customer: transfer to crypto wallet, my phone 9123 4567"
+C018,app_chat,04-11-2025,"New beneficiary: wife NRIC F1234567A, account 999-888777-666"
+C019,email,05-11-2025,"Payslip attached – gross income 95,000 SGD annual"
+C020,call_transcript,06-11-2025,"My IC G7890123C, urgent cash withdrawal 9,500 SGD"
+C021,app_chat,07-11-2025,Address change: 789 Marine Parade #08-901 S(449269)
+C022,email,08-11-2025,"Verify email john@fakebank.com, phone +60123456789"
+C023,call_transcript,09-11-2025,"Customer demands: send to offshore, passport T9876543Z"
+C024,app_chat,10-11-2025,"Salary not credited, my emp ID SG987654321"
+C025,email,11-11-2025,"Update phone to 9765 4321, NRIC S4567890A"
+C026,call_transcript,12-11-2025,"Transfer 35k to cousin, his IBAN MY12UOBM123456789012"
+C027,app_chat,13-11-2025,"Lost phone with banking app, old number 8123 4567"
+C028,email,14-11-2025,KYC docs: passport A4567890B
+C029,call_transcript,15-11-2025,"Customer: my account 333-444555-666, salary 6,200 SGD"
+C030,app_chat,16-11-2025,PayNow to 9234 5678 for family emergency
+C031,email,17-11-2025,Address: 123 Jalan Besar #05-678 S(209001)
+C032,call_transcript,18-11-2025,"IC S2345678B, urgent loan disbursement"
+C033,app_chat,19-11-2025,"Card expiry 09/27, number 6011-2345-6789-0123"
+C034,email,20-11-2025,Email update: jane.smith@fake.com
+C035,call_transcript,21-11-2025,"Customer: wire to Batam, phone +62 21 1234567"
+C036,app_chat,22-11-2025,"Salary query – expected 4,500 SGD"
+C037,email,23-11-2025,"NRIC G0123456D, new address Blk 456 Tampines St 41 #10-123"
+C038,call_transcript,24-11-2025,"Passport T5678901A, transfer 15k overseas"
+C039,app_chat,25-11-2025,Account closure: old no. 777-888999-000
+C040,email,26-11-2025,"Payslip Feb 2025 – net 7,800 SGD"
+C041,call_transcript,27-11-2025,"IC F8901234Z, cash deposit issue"
+C042,app_chat,28-11-2025,Phone verification +65 9345 6789
+C043,email,29-11-2025,Beneficiary add: husband account 456-789012-345
+C044,call_transcript,30-11-2025,"Customer: my SIN S6789012C, block transfers"
+C045,app_chat,01-12-2025,Address: 890 Woodlands Drive 50 #16-789 S(730890)
+C046,email,02-12-2025,"Salary advance request – income 11,000 SGD"
+C047,call_transcript,03-12-2025,"NRIC S9012345A, urgent wire to KL"
+C048,app_chat,04-12-2025,Card details: 3700-0000-0000-002 Amex
+C049,email,05-12-2025,Update email to support@fakebank.sg
+C050,call_transcript,06-12-2025,"Customer: passport A7890123B, transfer to Indonesia"
+C051,app_chat,07-12-2025,"PayNow QR for 8,200 SGD"
+C052,email,08-12-2025,KYC: IC G3456789D
+C053,call_transcript,09-12-2025,"Phone +6012 3456789, account 123-789456-012"
+C054,app_chat,10-12-2025,Salary not in – emp no. SG456789012
+C055,email,11-12-2025,New address 567 Serangoon Road #03-456 S(218161)
+C056,call_transcript,12-12-2025,"IC S0123456B, dispute charge"
+C057,app_chat,13-12-2025,Beneficiary NRIC F6789012A
+C058,email,14-12-2025,"Payslip – gross 105,000 SGD"
+C059,call_transcript,15-12-2025,"Customer: urgent cash to Johor, IBAN SG88OCBC1234567890"
+C060,app_chat,16-12-2025,Lost card no. 4917-5300-0000-0000
+C061,email,17-12-2025,Phone update 9456 7890
+C062,call_transcript,18-12-2025,"NRIC S7890123C, loan query"
+C063,app_chat,19-12-2025,Address change Blk 789 Yishun Ave 5 #11-234
+C064,email,20-12-2025,Email jdoe@fake.com.sg
+C065,call_transcript,21-12-2025,"Passport T2345678Z, transfer 25k"
+C066,app_chat,22-12-2025,"Salary 9,200 SGD expected"
+C067,email,23-12-2025,"IC G9012345D, KYC update"
+C068,call_transcript,24-12-2025,"Customer: account 999-123456-789, phone 8765 4321"
+C069,app_chat,25-12-2025,PayNow to 9012 3456
+C070,email,26-12-2025,"Payslip Dec – net 6,500 SGD"
+C071,call_transcript,27-12-2025,"NRIC S3456789A, block all"
+C072,app_chat,28-12-2025,"Card expiry 06/29, number 5555-6666-7777-8888"
+C073,email,29-12-2025,Address 321 Clementi Ave 2 #07-890 S(120321)
+C074,call_transcript,30-12-2025,"IC F1234567Z, urgent wire"
+C075,app_chat,31-12-2025,Salary issue – payroll SG789012345
+C076,email,01-01-2025,Phone +65 8123 4567
+C077,call_transcript,02-01-2025,"Customer: passport A5678901B, cash withdrawal"
+C078,app_chat,03-01-2025,Beneficiary account 234-567890-123
+C079,email,04-01-2025,KYC NRIC G4567890C
+C080,call_transcript,05-01-2025,"Transfer to Batam, my IBAN SG77UOBM0987654321"
+C081,app_chat,06-01-2025,Lost phone 9234 5678
+C082,email,07-01-2025,"Salary 5,800 SGD query"
+C083,call_transcript,08-01-2025,"IC S6789012D, dispute"
+C084,app_chat,09-01-2025,Address 456 Bedok North Ave 3 #09-012 S(460456)
+C085,email,10-01-2025,Email update alan.user@email.com
+C086,call_transcript,11-01-2025,"NRIC S9012345B, loan increase"
+C087,app_chat,12-01-2025,Card no. 3782-8224-6310-005
+C088,email,13-01-2025,"Payslip – annual 88,000 SGD"
+C089,call_transcript,14-01-2025,"Customer: phone +60123456789, transfer overseas"
+C090,app_chat,15-01-2025,PayNow 9345 6789
+C091,email,16-01-2025,"IC G0123456A, KYC"
+C092,call_transcript,17-01-2025,"Account 666-777888-999, salary 10,500 SGD"
+C093,app_chat,18-01-2025,New address Blk 890 Jurong West St 52 #14-345
+C094,email,19-01-2025,"Passport T8901234C, urgent"
+C095,call_transcript,20-01-2025,Customer: IBAN MY99MBB112233445566
+C096,app_chat,21-01-2025,Salary not received – emp SG234567890
+C097,email,22-01-2025,Phone 9765 4321 update
+C098,call_transcript,23-01-2025,"NRIC F5678901D, cash issue"
+C099,app_chat,24-01-2025,"Beneficiary NRIC S1234567Z, account 111-000999-888"

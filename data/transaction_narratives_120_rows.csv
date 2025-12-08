@@ -1,0 +1,121 @@
+﻿transaction_id,date,amount_sgd,currency,narrative
+T001,01-10-2025,9900,SGD,Cash deposit at Jurong East branch
+T002,02-10-2025,9850,SGD,Cash deposit at Woodlands branch
+T003,03-10-2025,9950,SGD,Cash deposit at Tampines branch – customer says for renovation
+T004,04-10-2025,9800,SGD,Cash deposit followed by same-day PayNow to multiple individuals
+T005,05-10-2025,50000,SGD,Incoming RTGS from ABC CRYPTO EXCHANGE PTE LTD
+T006,05-10-2025,49800,SGD,Immediate cash withdrawal after crypto credit
+T007,06-10-2025,9800,SGD,"Cash deposit – customer in construction vest, no company name"
+T008,07-10-2025,9999.99,SGD,Cash deposit daily pattern 12 days
+T009,08-10-2025,150000,SGD,Incoming from XYZ TRADING SDN BHD Malaysia – goods: used electronics
+T010,09-10-2025,149800,SGD,Same-day transfer to 18 different personal accounts
+T011,10-10-2025,8500,SGD,Salary credit from ABC MANPOWER SUPPLY then immediate PayNow to 91234567
+T012,11-10-2025,20000,SGD,Incoming from online betting platform WINBIG88
+T013,12-10-2025,9800,SGD,Cash deposit by girlfriend on behalf of boyfriend overseas
+T014,13-10-2025,30000,SGD,Transfer from account opened 3 days ago – no salary credit
+T015,14-10-2025,99950,SGD,Round dollar cash withdrawal at Johor Bahru ATM
+T016,15-10-2025,7500,SGD,Multiple small PayNow from different names – all message “lunch money”
+T017,16-10-2025,100000,SGD,Incoming from shell company in BVI – invoice attached for “consultancy”
+T018,17-10-2025,9800,SGD,Cash deposit every Monday for 6 months exactly 9800
+T019,18-10-2025,45000,SGD,Transfer to known online casino wallet address
+T020,19-10-2025,9900,SGD,Cash deposit by elderly customer – says son asked him to
+T021,20-10-2025,9850,SGD,Cash deposit at 5 different branches same day
+T022,21-10-2025,49500,SGD,Incoming from crypto exchange then immediate overseas wire
+T023,22-10-2025,9800,SGD,Cash deposit – customer refuses to fill CTR form
+T024,23-10-2025,200000,SGD,Trade payment for “scrap metal” – price 300% above market
+T025,24-10-2025,9800,SGD,Cash deposit pattern resumed after 2-week break
+T026,25-10-2025,15000,SGD,Multiple incoming from massage parlours
+T027,26-10-2025,9900,SGD,Cash deposit by domestic helper on behalf of employer
+T028,27-10-2025,48000,SGD,Incoming from high-risk jurisdiction then layered through 12 accounts
+T029,28-10-2025,9950,SGD,Cash deposit just below reporting threshold for 18 consecutive days
+T030,29-10-2025,30000,SGD,Transfer to newly opened student account then immediate cash out
+T031,30-10-2025,8500,SGD,Salary credit followed by immediate transfer to online gambling site
+T032,31-10-2025,9800,SGD,Cash deposit – customer says “don’t want to declare”
+T033,01-11-2025,100000,SGD,Incoming from Labuan company – description “management fees”
+T034,02-11-2025,49000,SGD,Crypto on-ramp then same-day offshore wire
+T035,03-11-2025,9950,SGD,Cash deposit at Orchard branch by different person every day
+T036,04-11-2025,25000,SGD,Multiple PayNow from strangers – all message “refund”
+T037,05-11-2025,9800,SGD,Cash deposit pattern – customer uses different counters
+T038,06-11-2025,150000,SGD,Trade-based laundering – over-invoicing of rice export
+T039,07-11-2025,9850,SGD,Cash deposit followed by PayNow to 25 different phones
+T040,08-11-2025,50000,SGD,Incoming from unlicensed money changer
+T041,09-11-2025,9900,SGD,Cash deposit – customer filming the teller
+T042,10-11-2025,40000,SGD,Funnel account – 87 incoming transfers in 3 days
+T043,11-11-2025,9800,SGD,Cash deposit every Friday evening
+T044,12-11-2025,30000,SGD,Transfer to mule account opened with fake passport
+T045,13-11-2025,9950,SGD,Cash deposit pattern – amount increases by $50 every week
+T046,14-11-2025,20000,SGD,Incoming from online casino then immediate cash withdrawal
+T047,15-11-2025,9800,SGD,Cash deposit by third party – says “boss asked me to”
+T048,16-11-2025,120000,SGD,Trade payment for “used clothing” – value highly suspicious
+T049,17-11-2025,9900,SGD,Cash deposit just below threshold – customer waiting outside for next person
+T050,18-11-2025,45000,SGD,Multiple incoming from high-risk remittance corridor
+T051,19-11-2025,9850,SGD,"Cash deposit pattern – same amount, different branches"
+T052,20-11-2025,60000,SGD,Incoming crypto then layered through 15 accounts
+T053,21-11-2025,9950,SGD,"Cash deposit – customer nervous, keeps looking around"
+T054,22-11-2025,35000,SGD,Transfer to account with no legitimate economic activity
+T055,23-11-2025,9800,SGD,Cash deposit every day for 30 days
+T056,24-11-2025,180000,SGD,Over-invoicing of palm oil export to related party
+T057,25-11-2025,9900,SGD,Cash deposit followed by immediate overseas telegraphic transfer
+T058,26-11-2025,40000,SGD,Incoming from unlicensed money lender
+T059,27-11-2025,9850,SGD,Cash deposit by different individuals – same handwriting on deposit slip
+T060,28-11-2025,25000,SGD,Multiple small deposits from ATMs in Johor Bahru
+T061,29-11-2025,9950,SGD,Cash deposit pattern – customer uses taxi to visit multiple branches
+T062,30-11-2025,50000,SGD,Incoming from high-risk virtual asset service provider
+T063,01-12-2025,9800,SGD,Cash deposit – customer says “don’t report lah”
+T064,02-12-2025,150000,SGD,Trade payment for “scrap copper” – price 400% above market
+T065,03-12-2025,9900,SGD,Cash deposit daily – amount exactly 9900 for 45 days
+T066,04-12-2025,30000,SGD,Transfer to newly opened account with minimum documentation
+T067,05-12-2025,45000,SGD,Incoming from online gambling platform
+T068,06-12-2025,9850,SGD,Cash deposit pattern resumed after regulator visit
+T069,07-12-2025,100000,SGD,Incoming from Seychelles IBC – “loan repayment”
+T070,08-12-2025,9950,SGD,Cash deposit by different runners every day
+T071,09-12-2025,20000,SGD,Multiple PayNow from strangers – message “gift”
+T072,10-12-2025,9800,SGD,Cash deposit – customer refuses to provide source of funds
+T073,11-12-2025,60000,SGD,Crypto layering through 20 accounts
+T074,12-12-2025,9900,SGD,Cash deposit pattern – customer uses different IDs
+T075,13-12-2025,40000,SGD,Funnel account activity intensified before year-end
+T076,14-12-2025,9950,SGD,Cash deposit just below threshold – customer waiting for next person
+T077,15-12-2025,150000,SGD,Trade-based laundering – carousel fraud indicators
+T078,16-12-2025,9850,SGD,Cash deposit every business day
+T079,17-12-2025,50000,SGD,Incoming from high-risk jurisdiction then immediate integration
+T080,18-12-2025,9800,SGD,Cash deposit – customer filming transaction
+T081,19-12-2025,30000,SGD,Transfer to mule network
+T082,20-12-2025,9900,SGD,Cash deposit pattern – amount increases gradually
+T083,21-12-2025,45000,SGD,Incoming from unlicensed remittance operator
+T084,22-12-2025,9950,SGD,Cash deposit by third party network
+T085,23-12-2025,200000,SGD,Highly suspicious trade transaction – red flags in documentation
+T086,24-12-2025,9850,SGD,Cash deposit pattern before Christmas
+T087,25-12-2025,9800,SGD,Cash deposit on public holiday
+T088,26-12-2025,50000,SGD,Crypto on-ramp then offshore wire
+T089,27-12-2025,9900,SGD,Cash deposit – customer says “last one for the year”
+T090,28-12-2025,40000,SGD,Multiple incoming from high-risk corridors
+T091,29-12-2025,9950,SGD,"Cash deposit pattern – different branches, same amount"
+T092,30-12-2025,9800,SGD,Final cash deposit of the year – customer smiling says “just nice below 10k”
+T093,01-11-2025,25000,SGD,Incoming PayNow from 47 different individuals in one day
+T094,02-11-2025,9800,SGD,Cash deposit – customer uses motorcycle to visit 4 branches
+T095,03-11-2025,60000,SGD,Layering through 22 accounts in 48 hours
+T096,04-11-2025,9900,SGD,Cash deposit every Tuesday and Thursday
+T097,05-11-2025,150000,SGD,Trade payment with multiple red flags – vessel name mismatch
+T098,06-11-2025,9850,SGD,Cash deposit by different individuals – coordinated timing
+T099,07-11-2025,30000,SGD,Transfer to account with PEP linkage
+T100,08-11-2025,9950,SGD,Cash deposit pattern – amount exactly 9950 for 20 days
+T101,09-11-2025,45000,SGD,Incoming from high-risk virtual asset platform
+T102,10-11-2025,9800,SGD,Cash deposit – customer refuses CCTV capture
+T103,11-11-2025,100000,SGD,Incoming from Panama company – “dividends”
+T104,12-11-2025,9900,SGD,Cash deposit daily pattern resumed
+T105,13-11-2025,50000,SGD,Crypto integration through multiple accounts
+T106,14-11-2025,9850,SGD,Cash deposit by runners using Grab
+T107,15-11-2025,20000,SGD,Multiple incoming from online gambling sites
+T108,16-11-2025,9950,SGD,Cash deposit just below threshold – pattern continues
+T109,17-11-2025,150000,SGD,Highly suspicious trade transaction – quantity mismatch
+T110,18-11-2025,9800,SGD,Cash deposit every day including weekends
+T111,19-11-2025,40000,SGD,Funnel account – rapid turnover
+T112,20-11-2025,9900,SGD,Cash deposit pattern – different counters same branch
+T113,21-11-2025,60000,SGD,Layering through corporate accounts
+T114,22-11-2025,9850,SGD,Cash deposit by coordinated group
+T115,23-11-2025,25000,SGD,Multiple PayNow from strangers
+T116,24-11-2025,9950,SGD,Cash deposit pattern – amount increases weekly
+T117,25-11-2025,30000,SGD,Transfer to high-risk jurisdiction
+T118,26-11-2025,9800,SGD,Cash deposit – customer waiting outside for next runner
+T119,27-11-2025,150000,SGD,Trade-based laundering indicators present
+T120,28-11-2025,9900,SGD,Final structuring deposit before month-end reporting
