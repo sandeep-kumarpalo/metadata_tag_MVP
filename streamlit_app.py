@@ -31,7 +31,7 @@ load_dotenv()
 # Page config & minimal styling
 # ---------------------------------------------------------------------
 st.set_page_config(
-    page_title="Banking Agentic Compliance Co-Pilot",
+    page_title=" Banking Agentic Compliance Co-Pilot",
     page_icon="🏦",
     layout="wide",
 )
@@ -39,36 +39,48 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .stApp { background-color: #f8f9fa; }
+    /* Base & Colors */
+    .stApp { background-color: #f8f9fa; } /* Light grey background */
+    :root {
+        --p-corporate-blue: #003366;
+        --p-gold-accent: #D4AF37;
+        --p-soft-red: #e57373;
+        --p-soft-green: #81c784;
+    }
+
+    /* Buttons */
     .stButton > button {
-        background-color: #007bff;
+        background-color: var(--p-corporate-blue);
         color: white;
         border: none;
         border-radius: 6px;
         padding: 0.4rem 0.9rem;
         font-weight: 500;
     }
-    .stButton > button:hover {
-        background-color: #0056b3;
-    }
-    .stSpinner > div > div { border-top-color: #007bff; }
+    .stButton > button:hover { background-color: #002244; }
+    .stSpinner > div > div { border-top-color: var(--p-corporate-blue); }
+
+    /* Dataframes & Containers */
     .stDataFrame { border: 1px solid #dee2e6; }
     .answer-card {
-        padding: 12px;
+        padding: 16px;
         background: #ffffff;
         border-radius: 8px;
-        border: 1px solid #dddddd;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         margin-bottom: 8px;
-        font-size: 0.95rem;
+        font-size: 1.0rem; /* Slightly larger font */
     }
-    .red-highlight { color: #c53030; font-weight: 600; }
-    .green-highlight { color: #047857; font-weight: 600; }
+
+    /* Agent response colors */
+    .red-highlight { border-left: 5px solid var(--p-soft-red); }
+    .green-highlight { border-left: 5px solid var(--p-soft-green); }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
-st.title("Banking Agentic Compliance Co-Pilot")
+st.title("🏦Banking Agentic Compliance Co-Pilot")
 st.markdown(
     "End-to-end demo of **metadata tagging → semantic layer → agentic access** "
     "for PII, AML and regulatory intelligence."
@@ -78,6 +90,8 @@ st.markdown(
 # Sidebar – Data uploads and exports
 # ---------------------------------------------------------------------
 with st.sidebar:
+    # Placeholder for a logo
+    # st.image("path/to/your/logo.png", width=200)
     st.header("Data Uploads")
 
     pii_file = st.file_uploader(
@@ -105,62 +119,6 @@ with st.sidebar:
         logs = st.session_state.setdefault("agent_logs", [])
         ts = datetime.now().strftime("%H:%M:%S")
         logs.append(f"{ts} | {msg}")
-
-    if st.button("Process All Data", type="primary"):
-        with st.spinner("Tagging PII, AML and Regulatory data..."):
-            # PII
-            if pii_file is not None:
-                log_tagging("Starting PII tagging (Process All Data)...")
-                df = pd.read_csv(pii_file)
-                tagged_pii = tag_pii_messages(df)
-                st.session_state["tagged_pii"] = tagged_pii
-                os.makedirs("outputs", exist_ok=True)
-                tagged_pii.to_csv("outputs/tagged_pii.csv", index=False)
-                tagged_pii.to_excel("outputs/tagged_pii.xlsx", index=False)
-                risk_counts = (
-                    tagged_pii["risk_flag"].value_counts().to_dict()
-                    if "risk_flag" in tagged_pii.columns
-                    else {}
-                )
-                log_tagging(
-                    f"PII tagging complete → {len(tagged_pii)} records, risk={risk_counts}"
-                )
-
-            # AML
-            if aml_file is not None:
-                log_tagging("Starting AML tagging (Process All Data)...")
-                df = pd.read_csv(aml_file)
-                tagged_aml = tag_aml_transactions(df)
-                st.session_state["tagged_aml"] = tagged_aml
-                os.makedirs("outputs", exist_ok=True)
-                tagged_aml.to_csv("outputs/tagged_aml.csv", index=False)
-                tagged_aml.to_excel("outputs/tagged_aml.xlsx", index=False)
-                high_risk = 0
-                if "risk_score" in tagged_aml.columns:
-                    high_risk = (tagged_aml["risk_score"] >= 8).sum()
-                log_tagging(
-                    f"AML tagging complete → {len(tagged_aml)} records, high-risk={high_risk}"
-                )
-
-            # Regulatory
-            if reg_file is not None:
-                log_tagging("Starting Regulatory tagging (Process All Data)...")
-                df = pd.read_csv(reg_file)
-                tagged_reg = tag_regulatory_obligations(df)
-                st.session_state["tagged_reg"] = tagged_reg
-                os.makedirs("outputs", exist_ok=True)
-                tagged_reg.to_csv("outputs/tagged_regulatory.csv", index=False)
-                tagged_reg.to_excel("outputs/tagged_regulatory.xlsx", index=False)
-                owners = (
-                    tagged_reg["owner"].value_counts().to_dict()
-                    if "owner" in tagged_reg.columns
-                    else {}
-                )
-                log_tagging(
-                    f"Regulatory tagging complete → {len(tagged_reg)} paragraphs, owners={owners}"
-                )
-
-        st.success("Tagging complete – data ready for semantic layer and agents.")
 
     st.header("Exports")
     if "tagged_pii" in st.session_state:
@@ -900,23 +858,20 @@ with tab_semantic:
 with tab_agent:
     st.header("Agentic Access")
 
-    method3 = st.selectbox(
-        "Select Agent Mode",
-        [
-            "Without Layer (Baseline)",
-            "With Layer (Grounded)",
-            "With Vector-Enhanced Layer (Hybrid)",
-        ],
-    )
     query = st.text_input(
         "Ask a question (e.g. NRIC leaks, salary details, high-risk crypto, MAS 610, SAR for T028)"
     )
+
+    st.markdown("---")
 
     col1, col2 = st.columns(2)
 
     # ---------------------- Without Layer ---------------------------
     with col1:
-        st.subheader("Without Layer (Raw Engine)")
+        st.markdown("#### Without Layer (Baseline Engine)")
+        st.markdown(
+            "<p style='font-size:0.9rem; color:#6c757d;'>Runs on raw, untagged data. Answers may be incomplete or lack risk context.</p>",
+            unsafe_allow_html=True)
         if st.button("Run Without Layer"):
             if not query.strip():
                 st.warning("Please enter a query first.")
@@ -947,10 +902,11 @@ with tab_agent:
             # Convert newlines to <br> so bullets render nicely inside the HTML card
             answer_html = answer_raw.replace("\n", "<br>")
 
-            st.markdown(
-                f"<div class='answer-card red-highlight'>{answer_html}</div>",
-                unsafe_allow_html=True,
-            )
+            with st.container():
+                st.markdown(
+                    f"<div class='answer-card red-highlight'>{answer_html}</div>",
+                    unsafe_allow_html=True,
+                )
 
             with st.expander("Tool Trace (Without Layer)"):
                 st.write(f"**Intent:** {tw.get('intent')}")
@@ -970,7 +926,10 @@ with tab_agent:
 
     # ---------------------- With Layer / Hybrid ---------------------
     with col2:
-        st.subheader("With Layer / Hybrid (Semantic Engine)")
+        st.markdown("#### With Layer (Semantic Engine)")
+        st.markdown(
+            "<p style='font-size:0.9rem; color:#6c757d;'>Runs on tagged, enriched data. Provides grounded, auditable, and context-aware answers.</p>",
+            unsafe_allow_html=True)
 
         if st.button("Run With Layer / Hybrid"):
             if not query.strip():
@@ -978,30 +937,26 @@ with tab_agent:
             else:
                 with st.spinner("Running semantic-layer agent..."):
 
-                    if method3 == "With Vector-Enhanced Layer (Hybrid)":
-                        # --- Ensure FAISS index is built ---
-                        index_path = "outputs/faiss_index.index"
-                        if not os.path.exists(index_path):
-                            tagged_data = {
-                                "pii": st.session_state.get(
-                                    "tagged_pii", pd.DataFrame()
-                                ),
-                                "aml": st.session_state.get(
-                                    "tagged_aml", pd.DataFrame()
-                                ),
-                                "reg": st.session_state.get(
-                                    "tagged_reg", pd.DataFrame()
-                                ),
-                            }
-                            log_semantic(
-                                "Auto-building Hybrid Layer before agent run..."
-                            )
-                            _ = build_dbt_faiss_hybrid_layer(tagged_data)
+                    # --- Always use the best agent (Hybrid) and auto-build FAISS if needed ---
+                    index_path = "outputs/faiss_index.index"
+                    if not os.path.exists(index_path):
+                        tagged_data = {
+                            "pii": st.session_state.get(
+                                "tagged_pii", pd.DataFrame()
+                            ),
+                            "aml": st.session_state.get(
+                                "tagged_aml", pd.DataFrame()
+                            ),
+                            "reg": st.session_state.get(
+                                "tagged_reg", pd.DataFrame()
+                            ),
+                        }
+                        log_semantic(
+                            "Auto-building Hybrid Layer before agent run..."
+                        )
+                        _ = build_dbt_faiss_hybrid_layer(tagged_data)
 
-                        agent_with = create_agent_with_vector_layer_with_trace()
-
-                    else:
-                        agent_with = create_agent_with_layer_with_trace()
+                    agent_with = create_agent_with_vector_layer_with_trace()
 
                     trace_with = agent_with(query)
                     st.session_state["trace_with"] = trace_with
@@ -1025,10 +980,11 @@ with tab_agent:
             answer_raw = tw.get("answer", "") or ""
             answer_html = answer_raw.replace("\n", "<br>")
 
-            st.markdown(
-                f"<div class='answer-card green-highlight'>{answer_html}</div>",
-                unsafe_allow_html=True,
-            )
+            with st.container():
+                st.markdown(
+                    f"<div class='answer-card green-highlight'>{answer_html}</div>",
+                    unsafe_allow_html=True,
+                )
 
             with st.expander("Tool Trace (With Layer / Hybrid)"):
 
@@ -1053,16 +1009,15 @@ with tab_agent:
         tw_with = st.session_state["trace_with"]
 
         st.markdown("---")
-        st.subheader("Quick Comparison")
+        st.subheader("Agent Comparison Summary")
 
         col_a, col_b = st.columns(2)
         with col_a:
             st.markdown("**Baseline signal (raw data)**")
-            resp = tw_out.get("answer") or ""
-            st.write("Length:", len(resp))
-            st.write("Intent:", tw_out.get("intent"))
-            st.write("Tool:", tw_out.get("tool_name"))
-            st.write("Hit count:", tw_out.get("hit_count", 0))
+            resp = tw_out.get("answer", "")
+            st.metric("Answer Length", f"{len(resp)} chars")
+            st.metric("Hit Count", tw_out.get("hit_count", 0))
+            st.write(f"**Intent:** {tw_out.get('intent')} | **Tool:** {tw_out.get('tool_name')}")
             if tw_out.get("hit_count", 0) == 0 or "No results found" in resp:
                 st.write("Result: No hits – raw data struggled.")
             else:
@@ -1070,11 +1025,10 @@ with tab_agent:
 
         with col_b:
             st.markdown("**Semantic-layer signal (tagged data)**")
-            resp = tw_with.get("answer") or ""
-            st.write("Length:", len(resp))
-            st.write("Intent:", tw_with.get("intent"))
-            st.write("Tool:", tw_with.get("tool_name"))
-            st.write("Hit count:", tw_with.get("hit_count", 0))
+            resp = tw_with.get("answer", "")
+            st.metric("Answer Length", f"{len(resp)} chars")
+            st.metric("Hit Count", tw_with.get("hit_count", 0))
+            st.write(f"**Intent:** {tw_with.get('intent')} | **Tool:** {tw_with.get('tool_name')}")
             if tw_with.get("hit_count", 0) == 0 or "No results found" in resp:
                 st.write("Result: No hits – even semantic layer found nothing.")
             else:
